@@ -796,8 +796,8 @@
         if(i>=stops.length){setTimeout(()=>{map.flyTo({center:[-117.95,52.87],zoom:9,pitch:60,bearing:30,duration:4000});btns.forEach(b=>b.classList.remove('active'))},3000);return}
         const s=stops[i];btns.forEach(b=>b.classList.remove('active'));
         const m=document.querySelector('.map-fly-btn[data-idx="'+i+'"]');if(m)m.classList.add('active');
-        map.flyTo({center:s.coords,zoom:s.zoom,pitch:s.pitch,bearing:s.bearing,duration:i===0?3000:4000,essential:true});
-        map.once('moveend',()=>setTimeout(()=>flyTour(i+1),2500));
+        map.flyTo({center:s.coords,zoom:s.zoom,pitch:s.pitch,bearing:s.bearing,duration:i===0?4000:5500,essential:true});
+        map.once('moveend',()=>setTimeout(()=>flyTour(i+1),5000));
       }
     });
   }
