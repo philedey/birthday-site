@@ -56,7 +56,7 @@
   .hero-bg { position:absolute; inset:0; z-index:0; }
   .hero-bg::before {
     content:''; position:absolute; inset:0;
-    background:url('https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=1600&q=80') center/cover no-repeat;
+    background:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80') center/cover no-repeat;
     opacity:.45; animation:subtleZoom 30s ease-in-out infinite alternate;
   }
   .hero-bg::after {
@@ -476,14 +476,14 @@
       <div class="countdown-label">Seconds</div>
     </div>
   </div>
-  <p style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:rgba(201,168,76,.4);margin-top:24px" class="reveal">Set the date and watch the magic begin</p>
+  <p style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:rgba(201,168,76,.4);margin-top:24px" class="reveal">April 24, 2026</p>
 </section>
 
 <!-- ITINERARY HEADER -->
 <div class="itinerary-header">
   <span class="section-label reveal">The Plan</span>
   <h2 class="section-title reveal">Your <em>Jasper</em><br>Adventure</h2>
-  <div class="date-badge reveal">Date — TBD — Mark Your Calendar</div>
+  <div class="date-badge reveal">Friday — April 24, 2026</div>
 </div>
 
 <!-- STOP 1: Maligne Canyon -->
@@ -696,7 +696,7 @@
   // ═══ COUNTDOWN ═══
   // Set the birthday date here (YYYY, M-1, D) — month is 0-indexed
   // Example: July 15, 2026 = new Date(2026, 6, 15)
-  const BIRTHDAY = null; // Set to: new Date(2026, MONTH-1, DAY)
+  const BIRTHDAY = new Date(2026, 3, 24); // April 24, 2026
   function updateCountdown(){
     if(!BIRTHDAY){
       document.getElementById('cd-days').textContent='--';
